@@ -13,6 +13,7 @@ public class MyEntity {
     private Integer version;
 
     @Convert(converter = YesNoConverter.class)
+    //@Convert(converter = BooleanToStringConverter.class)
     private Boolean paused;
 
     @Column(length = 120)
