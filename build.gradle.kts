@@ -20,6 +20,11 @@ repositories {
     mavenCentral()
 }
 
+ext {
+    // when downgrading the h2 version from 2.4 to 2.3, the tests pass again
+//    set("h2.version", "2.3.232")
+}
+
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     runtimeOnly("com.h2database:h2")
